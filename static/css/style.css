@@ -5,6 +5,9 @@ body {
   line-height: 1.8;
   color: black;
 }
+.page-bg {
+  background-color: #f6f7f8;
+}
 .btn {
   border-radius: 8.5px;
   text-transform: uppercase;
@@ -24,7 +27,6 @@ body {
 .navbar {
   padding-left: 3.3125rem;
   padding-right: 3.3125rem;
-  background-color: #f6f7f8;
   height: 110px;
 }
 .navbar-brand {
@@ -99,4 +101,18 @@ body {
 }
 .landing-btn {
   padding-top: 20px;
+}
+.heading-meta {
+  display: block;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.heading {
+  display: block;
+  font-weight: 900;
+  font-size: 36px;
+}
+.aboutme {
+  padding: 99px 0;
 }
