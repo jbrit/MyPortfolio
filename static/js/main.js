@@ -1,4 +1,5 @@
 $(() => {
+  AOS.init();
   (() => {
     $(window).scroll(function () {
       // Says this function is preformed continuisly while scrolling.
