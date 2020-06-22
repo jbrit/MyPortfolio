@@ -5,8 +5,8 @@ body {
   line-height: 1.8;
   color: black;
 }
-.vh-100 {
-  min-height: 100vh;
+.vam {
+  vertical-align: middle;
 }
 .page-bg {
   background-color: #f6f7f8;
@@ -191,4 +191,12 @@ body {
   font-size: 12px;
   line-height: initial;
   height: 28px;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+input.form-control,
+textarea.form-control {
+  border-color: #007dfe;
+  border-radius: 0;
 }
