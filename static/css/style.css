@@ -192,6 +192,9 @@ body {
   line-height: initial;
   height: 28px;
 }
+.mw-form {
+  max-width: 800px;
+}
 .form-group {
   margin-bottom: 1.5rem;
 }
