@@ -5,6 +5,9 @@ body {
   line-height: 1.8;
   color: black;
 }
+.vh-100 {
+  min-height: 100vh;
+}
 .page-bg {
   background-color: #f6f7f8;
 }
@@ -144,4 +147,16 @@ body {
 .card-body {
   text-align: center;
   padding: 0;
+}
+.progress-group {
+  margin: 20px 0;
+}
+.whole-progress-bar {
+  background-color: #c4c4c4;
+  height: 15px;
+}
+.colored-progress-section {
+  /* background-color: attr(data-color, color);
+  width: attr(data-value); */
+  height: 100%;
 }
