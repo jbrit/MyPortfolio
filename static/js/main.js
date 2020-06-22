@@ -1,16 +1,36 @@
 $(() => {
   (() => {
+    $(window).scroll(function () {
+      // Says this function is preformed continuisly while scrolling.
+      var Scroll = $(window).scrollTop() + 110, // This variable finds the distance you have scrolled from the top.
+        SectionOneOffset = $("#home").offset().top - 110,
+        SectionTwoOffset = $("#about").offset().top - 110,
+        SectionThreeOffset = $("#skills").offset().top - 110,
+        SectionFourOffset = $("#services").offset().top - 110,
+        SectionFiveOffset = $("#contact").offset().top - 110;
+      $("nav li").removeClass("active");
+      if (Scroll >= SectionFiveOffset)
+        $(".menu-item-5").parent().addClass("active");
+      else if (Scroll >= SectionFourOffset)
+        $(".menu-item-4").parent().addClass("active");
+      else if (Scroll >= SectionThreeOffset)
+        $(".menu-item-3").parent().addClass("active");
+      else if (Scroll >= SectionTwoOffset)
+        $(".menu-item-2").parent().addClass("active");
+      else if (Scroll >= SectionOneOffset)
+        $(".menu-item-1").parent().addClass("active");
+    });
+  })();
+  (() => {
     var headerHeight = $("nav.navbar").outerHeight(); // Target your header navigation here
 
-    $("nav li a").click(function (e) {
+    $("[href]").click(function (e) {
       $(".collapse").collapse("hide");
-      $("nav li").removeClass("active");
-      $(this).parent().addClass("active");
       var targetHref = $(this).attr("href");
 
       $("html, body").animate(
         {
-          scrollTop: $(targetHref).offset().top - headerHeight, // Add it to the calculation here
+          scrollTop: $(targetHref).offset().top - headerHeight + 1, // Add it to the calculation here
         },
         1000
       );
