@@ -153,10 +153,28 @@ body {
 }
 .whole-progress-bar {
   background-color: #c4c4c4;
-  height: 15px;
+  height: 12px;
+  border-radius: 6px;
 }
 .colored-progress-section {
-  /* background-color: attr(data-color, color);
-  width: attr(data-value); */
   height: 100%;
+  position: relative;
+  border-radius: inherit;
+}
+.colored-progress-section::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  background-color: inherit;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+}
+.colored-progress-section::after {
+  content: attr(data-value);
+  position: absolute;
+  font-size: 0.8rem;
+  top: -1.8rem;
+  right: 0;
 }
