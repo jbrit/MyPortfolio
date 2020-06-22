@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <nav class="navbar page-bg navbar-expand-lg py-4">
+    <nav class="navbar page-bg navbar-expand-lg fixed-top py-4">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -53,27 +53,27 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#home"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
+              <a class="nav-link" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="landing-section">
+    <section id="home" class="landing-section">
       <div class="container h-100">
         <div class="row h-100">
           <div
@@ -117,7 +117,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutme page-bg">
+    <section id="about" class="aboutme page-bg">
       <div class="container">
         <span class="heading-meta">About Me</span>
         <span class="heading">WordPress Developer and UI/UX Designer</span>
@@ -156,7 +156,7 @@
         </div>
       </div>
     </section>
-    <section class="myskills py-5">
+    <section id="skills" class="myskills py-5">
       <div class="container">
         <div class="heading-meta">My Skills</div>
         <div class="section-body">
@@ -280,7 +280,7 @@
         </div>
       </div>
     </section>
-    <section class="services-section page-bg">
+    <section id="services" class="services-section page-bg">
       <div class="container">
         <span class="heading-meta">Services</span>
         <div class="section-body">
@@ -359,7 +359,7 @@
         </div>
       </div>
     </section>
-    <section class="intouch-section py-5">
+    <section id="contact" class="intouch-section py-5">
       <span class="heading-meta text-center">Get in Touch</span>
       <div class="container">
         <div class="row">
@@ -481,11 +481,7 @@
       </div>
     </footer>
     <!-- scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
